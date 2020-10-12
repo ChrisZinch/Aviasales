@@ -1,0 +1,8 @@
+.container {
+  width: 502px;
+  margin-left: 20px;
+
+  &:last-child {
+    margin-bottom: 120px;
+  }
+}

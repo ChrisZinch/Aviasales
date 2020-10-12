@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  width: $card-width;
+  height: $card-height;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 36px;
+  }
+
+  &__price {
+    display: flex;
+    font-size: 24px;
+    color: $main-color;
+    align-self: center;
+  }
+
+  &__logo {
+    width: 110px;
+    height: 36px;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+  }
+}
