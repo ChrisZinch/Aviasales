@@ -1,11 +1,9 @@
 .way {
   width: 462px;
   margin-top: 20px;
-
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   &__part {
     display: flex;
@@ -20,7 +18,7 @@
 
     &--bottom {
       font-size: 14px;
-      color: #4A4A4A;
+      color: $text-color;
     }
   }
 }
