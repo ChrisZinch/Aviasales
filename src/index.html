@@ -6,7 +6,7 @@
     <title>Aviasales</title>
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="icon" href="./images/plane.svg">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -20,57 +20,42 @@
       <div class="amount-transfer">
         <h3 class="amount-transfer__title">Количество пересадок</h3>
         <div class="checkbox">
-          <label for="all" class="amount-transfer__item">
-            <input
-              type="checkbox"
-              id="all"
-              class="amount-transfer__checkbox"
-            >
-            Все
-          </label>
+          <input
+            type="checkbox"
+            id="checkbox"
+          >
+          <label for="checkbox"><span>Все</span></label>
         </div>
         <div class="checkbox">
-          <label for="without-transfer" class="amount-transfer__item">
-            <input
-              type="checkbox"
-              id="without-transfer"
-              class="amount-transfer__checkbox"
-              checked
-            >
-            Без пересадок
-          </label>
+          <input
+            type="checkbox"
+            id="checkbox2"
+            checked
+          >
+          <label for="checkbox2"><span>Без пересадок</span></label>
         </div>
         <div class="checkbox">
-          <label for="1-transfer" class="amount-transfer__item">
-            <input
-              type="checkbox"
-              id="1-transfer"
-              class="amount-transfer__checkbox"
-              checked
-            >
-            1 пересадка
-          </label>
+          <input
+            type="checkbox"
+            id="checkbox3"
+            checked
+          >
+          <label for="checkbox3"><span>1 пересадка</span></label>
         </div>
         <div class="checkbox">
-          <label for="2-transfer" class="amount-transfer__item">
-            <input
-              type="checkbox"
-              id="2-transfer"
-              class="amount-transfer__checkbox"
-              checked
-            >
-            2 пересадки
-          </label>
+          <input
+            type="checkbox"
+            id="checkbox4"
+            checked
+          >
+          <label for="checkbox4"><span>2 пересадки</span></label>
         </div>
         <div class="checkbox">
-          <label for="3-transfer" class="amount-transfer__item">
-            <input
-              type="checkbox"
-              id="3-transfer"
-              class="amount-transfer__checkbox"
-            >
-            3 пересадки
-          </label>
+          <input
+            type="checkbox"
+            id="checkbox5"
+          >
+          <label for="checkbox5"><span>3 пересадки</span></label>
         </div>
       </div>
       <div class="container">
@@ -79,204 +64,109 @@
           <div class="toggle__fast">Самый быстрый</div>
         </div>
         <div class="card">
-          <div class="card__top">
-            <p class="card__price">13 400 P</p>
+            <section class="card__price">13 400 P</section>
+            <section></section>
             <img
               src="./images/airlinesLogo.png"
               class="card__logo"
               alt="airlines logo"
             >
-          </div>
-          <div class="card__details">
-            <div class="way">
-              <div class="way__part">
-                <section class="way__part--top">Mow - Hkt</section>
-                <section class="way__part--bottom">10:45 - 8:00</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">В пути</section>
-                <section class="way__part--bottom">21ч 15м</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">2 пересадки</section>
-                <section class="way__part--bottom">HKG, JNB</section>
-              </div>
-            </div>
-            <div class="way">
-              <div class="way__part">
-                <section class="way__part--top">Mow - Hkt</section>
-                <section class="way__part--bottom">11:20 - 00:50</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">В пути</section>
-                <section class="way__part--bottom">13ч 30м</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">1 пересадкa</section>
-                <section class="way__part--bottom">HKG</section>
-              </div>
-            </div>
-          </div>
+            <section class="card__part--top">Mow - Hkt</section>
+            <section class="card__part--top">В пути</section>
+            <section class="card__part--top">2 пересадки</section>
+            <section class="card__part--bottom">10:45 - 8:00</section>
+            <section class="card__part--bottom">21ч 15м</section>
+            <section class="card__part--bottom">HKG, JNB</section>
+            <section class="card__part--top">Mow - Hkt</section>
+            <section class="card__part--top">В пути</section>
+            <section class="card__part--top">1 пересадкa</section>
+            <section class="card__part--bottom">11:20 - 00:50</section>
+            <section class="card__part--bottom">13ч 30м</section>
+            <section class="card__part--bottom">HKG</section>
         </div>
         <div class="card">
-          <div class="card__top">
-            <p class="card__price">13 400 P</p>
-            <img
-              src="./images/airlinesLogo.png"
-              class="card__logo"
-              alt="airlines logo"
-            >
-          </div>
-          <div class="card__details">
-            <div class="way">
-              <div class="way__part">
-                <section class="way__part--top">Mow - Hkt</section>
-                <section class="way__part--bottom">10:45 - 8:00</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">В пути</section>
-                <section class="way__part--bottom">21ч 15м</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">2 пересадки</section>
-                <section class="way__part--bottom">HKG, JNB</section>
-              </div>
-            </div>
-            <div class="way">
-              <div class="way__part">
-                <section class="way__part--top">Mow - Hkt</section>
-                <section class="way__part--bottom">11:20 - 00:50</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">В пути</section>
-                <section class="way__part--bottom">13ч 30м</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">1 пересадкa</section>
-                <section class="way__part--bottom">HKG</section>
-              </div>
-            </div>
-          </div>
+          <section class="card__price">13 400 P</section>
+          <section></section>
+          <img
+            src="./images/airlinesLogo.png"
+            class="card__logo"
+            alt="airlines logo"
+          >
+          <section class="card__part--top">Mow - Hkt</section>
+          <section class="card__part--top">В пути</section>
+          <section class="card__part--top">2 пересадки</section>
+          <section class="card__part--bottom">10:45 - 8:00</section>
+          <section class="card__part--bottom">21ч 15м</section>
+          <section class="card__part--bottom">HKG, JNB</section>
+          <section class="card__part--top">Mow - Hkt</section>
+          <section class="card__part--top">В пути</section>
+          <section class="card__part--top">1 пересадкa</section>
+          <section class="card__part--bottom">11:20 - 00:50</section>
+          <section class="card__part--bottom">13ч 30м</section>
+          <section class="card__part--bottom">HKG</section>
         </div>
         <div class="card">
-          <div class="card__top">
-            <p class="card__price">13 400 P</p>
-            <img
-              src="./images/airlinesLogo.png"
-              class="card__logo"
-              alt="airlines logo"
-            >
-          </div>
-          <div class="card__details">
-            <div class="way">
-              <div class="way__part">
-                <section class="way__part--top">Mow - Hkt</section>
-                <section class="way__part--bottom">10:45 - 8:00</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">В пути</section>
-                <section class="way__part--bottom">21ч 15м</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">2 пересадки</section>
-                <section class="way__part--bottom">HKG, JNB</section>
-              </div>
-            </div>
-            <div class="way">
-              <div class="way__part">
-                <section class="way__part--top">Mow - Hkt</section>
-                <section class="way__part--bottom">11:20 - 00:50</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">В пути</section>
-                <section class="way__part--bottom">13ч 30м</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">1 пересадкa</section>
-                <section class="way__part--bottom">HKG</section>
-              </div>
-            </div>
-          </div>
+          <section class="card__price">13 400 P</section>
+          <section></section>
+          <img
+            src="./images/airlinesLogo.png"
+            class="card__logo"
+            alt="airlines logo"
+          >
+          <section class="card__part--top">Mow - Hkt</section>
+          <section class="card__part--top">В пути</section>
+          <section class="card__part--top">2 пересадки</section>
+          <section class="card__part--bottom">10:45 - 8:00</section>
+          <section class="card__part--bottom">21ч 15м</section>
+          <section class="card__part--bottom">HKG, JNB</section>
+          <section class="card__part--top">Mow - Hkt</section>
+          <section class="card__part--top">В пути</section>
+          <section class="card__part--top">1 пересадкa</section>
+          <section class="card__part--bottom">11:20 - 00:50</section>
+          <section class="card__part--bottom">13ч 30м</section>
+          <section class="card__part--bottom">HKG</section>
         </div>
         <div class="card">
-          <div class="card__top">
-            <p class="card__price">13 400 P</p>
-            <img
-              src="./images/airlinesLogo.png"
-              class="card__logo"
-              alt="airlines logo"
-            >
-          </div>
-          <div class="card__details">
-            <div class="way">
-              <div class="way__part">
-                <section class="way__part--top">Mow - Hkt</section>
-                <section class="way__part--bottom">10:45 - 8:00</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">В пути</section>
-                <section class="way__part--bottom">21ч 15м</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">2 пересадки</section>
-                <section class="way__part--bottom">HKG, JNB</section>
-              </div>
-            </div>
-            <div class="way">
-              <div class="way__part">
-                <section class="way__part--top">Mow - Hkt</section>
-                <section class="way__part--bottom">11:20 - 00:50</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">В пути</section>
-                <section class="way__part--bottom">13ч 30м</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">1 пересадкa</section>
-                <section class="way__part--bottom">HKG</section>
-              </div>
-            </div>
-          </div>
+          <section class="card__price">13 400 P</section>
+          <section></section>
+          <img
+            src="./images/airlinesLogo.png"
+            class="card__logo"
+            alt="airlines logo"
+          >
+          <section class="card__part--top">Mow - Hkt</section>
+          <section class="card__part--top">В пути</section>
+          <section class="card__part--top">2 пересадки</section>
+          <section class="card__part--bottom">10:45 - 8:00</section>
+          <section class="card__part--bottom">21ч 15м</section>
+          <section class="card__part--bottom">HKG, JNB</section>
+          <section class="card__part--top">Mow - Hkt</section>
+          <section class="card__part--top">В пути</section>
+          <section class="card__part--top">1 пересадкa</section>
+          <section class="card__part--bottom">11:20 - 00:50</section>
+          <section class="card__part--bottom">13ч 30м</section>
+          <section class="card__part--bottom">HKG</section>
         </div>
         <div class="card">
-          <div class="card__top">
-            <p class="card__price">13 400 P</p>
-            <img
-              src="./images/airlinesLogo.png"
-              class="card__logo"
-              alt="airlines logo"
-            >
-          </div>
-          <div class="card__details">
-            <div class="way">
-              <div class="way__part">
-                <section class="way__part--top">Mow - Hkt</section>
-                <section class="way__part--bottom">10:45 - 8:00</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">В пути</section>
-                <section class="way__part--bottom">21ч 15м</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">2 пересадки</section>
-                <section class="way__part--bottom">HKG, JNB</section>
-              </div>
-            </div>
-            <div class="way">
-              <div class="way__part">
-                <section class="way__part--top">Mow - Hkt</section>
-                <section class="way__part--bottom">11:20 - 00:50</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">В пути</section>
-                <section class="way__part--bottom">13ч 30м</section>
-              </div>
-              <div class="way__part">
-                <section class="way__part--top">1 пересадкa</section>
-                <section class="way__part--bottom">HKG</section>
-              </div>
-            </div>
-          </div>
+          <section class="card__price">13 400 P</section>
+          <section></section>
+          <img
+            src="./images/airlinesLogo.png"
+            class="card__logo"
+            alt="airlines logo"
+          >
+          <section class="card__part--top">Mow - Hkt</section>
+          <section class="card__part--top">В пути</section>
+          <section class="card__part--top">2 пересадки</section>
+          <section class="card__part--bottom">10:45 - 8:00</section>
+          <section class="card__part--bottom">21ч 15м</section>
+          <section class="card__part--bottom">HKG, JNB</section>
+          <section class="card__part--top">Mow - Hkt</section>
+          <section class="card__part--top">В пути</section>
+          <section class="card__part--top">1 пересадкa</section>
+          <section class="card__part--bottom">11:20 - 00:50</section>
+          <section class="card__part--bottom">13ч 30м</section>
+          <section class="card__part--bottom">HKG</section>
         </div>
       </div>
     </main>

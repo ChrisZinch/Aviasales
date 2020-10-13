@@ -1,5 +1,4 @@
 .card {
-  display: flex;
   width: $card-width;
   height: $card-height;
   background-color: #fff;
@@ -7,20 +6,17 @@
   margin-top: 20px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: $border-radius;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 155px);
+
 
   &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
     height: 36px;
   }
 
   &__price {
-    display: flex;
     font-size: 24px;
     color: $main-color;
-    align-self: center;
   }
 
   &__logo {
@@ -28,8 +24,18 @@
     height: 36px;
   }
 
-  &__details {
-    display: flex;
-    flex-direction: column;
+  &__part {
+    &--top {
+      color: $details-color;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+
+    &--bottom {
+      font-size: 14px;
+      color: $text-color;
+    }
   }
+
 }
